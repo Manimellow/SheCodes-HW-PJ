@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Parents</title>
+    <style>
+      body {
+        image: url("https://images.unsplash.com/photo-1543353071-873f17a7a088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGhlYWx0aHklMjBmb29kfGVufDB8fDB8fA%3D%3D&w=1000&q=80");
+
+      }
+
+      
+      li {
+        list-style: none;
+        display: inline;
+        padding-left: 120px;
+        font-size: 16px;
+      
+      }
+
+      h1 {
+        text-align: center;
+        color: orangered;
+        font-size: 40px;
+        padding: 10px;
+      }
+
+      img {
+        text-align: center;
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+        width: 50%
+      }
+
+      h2 {
+        text-align: center;
+        border: none;
+        padding: 20px;
+        font-size: 28px;
+        border-radius: 15px;      
+      }
+      
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+      }
+      .recipe-button{
+      display: block;
+      padding: 15px 20px;
+      margin: auto;
+      font-size: 16px;
+      font-family: Helvetica, sans-serif;
+      font-weight: 600;
+      color:darkslategrey;
+      background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147));
+      border: rgb(2, 49, 54) solid 1px;
+      border-radius: 40px;
+      }
+    button:hover {
+      color: white;
+      background: radial-gradient(circle at 0.7% 2.7%, rgb(237, 220, 140) 0%, rgb(241, 121, 121) 90%);
+      border: rgb(241, 121, 121) solid 1px;
+      border-radius: 30px;
+      transition: all 200ms ease;
+    }
+
+    </style>
+  </head>
+  <body>
+  <ul>
+    <li> Home </li>
+    <li> Recipes </li>
+    <li> Meal plan </li>
+    <li> Account </li>
+  </br>
+<h1>CAT PARENTS</h1>
+<h2> Cat-friendly homemade food recipes </br> for your furry pals</h2> 
+<div>
+<img src= "https://cf.ltkcdn.net/cats/diet-and-nutrition/images/orig/325995-1600x1030-how-make-homemade-dry-cat-food.jpg"
+alt="Healthy food"
+width= "600">
+
+ 
+  <p>
+    Have you ever made DIY homemade cat food? 
+  </br>
+    Pet owners of all kinds have been exploring different options for their 
+    beloved pets over the past several years regarding diet. 
+    As a result, many cat owners have switched from traditional cat food 
+    choices to creating DIY homemade cat foods at home.
+  </br>
+  </br>
+    If you are debating the option of homemade cat food for your kitty, this is a great post to learn some basics and get started with 3 favorite recipes.
+  
+  </p>
+</div>
+
+<button class="recipe-button">
+  3 simple recipes
+</button>
+<script>
+      function recipe() {
+        let name = prompt("What is your name?");
+        let question = prompt ("Would you like to recieve healthy food recipes from Healthlicious? Please answer with yes or no.").toLowerCase();
+        if (question === "yes") {
+          let email = prompt("Please type your email 📧");
+          alert("Thank you "+ name + ". We will send you healthy recipes weekly to "+ email);
+          let h2 = document.querySelector("h2");
+          h2.innerHTML = "Welcome " + name + ". Let's check out all the healthy recipes and enjoy cooking!";
+        
+        } else if (quizPrompt === "no") {
+          alert("You can check all the healthy food recipes on our website!")
+        }
+      
+    }
+    let recipeButton = document.querySelector("button");
+      recipeButton.addEventListener("click", subscribe);
+    </script>
+          </body>
+</html>
+  
